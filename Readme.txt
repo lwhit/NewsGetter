@@ -2,8 +2,8 @@ Project by Logan Whitmire
 Completed on 9 December 2015
 
 Purpose: To search Google News for a key word. If the key word is found on 
-the website, then a picture of a dog informs you of this.
-If we can not find the key word on Google News, then you get a blank page :/
+the website, then a picture of a happy dog informs you of this.
+If we can not find the key word on Google News, then you get a sad dog.
 
 Original intention of the project could not be met on time. Original intention
 was to display the link given for a story that corresponds with the key word.
