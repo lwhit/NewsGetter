@@ -15,7 +15,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     var url = NSURL(string: "https://news.google.com/")!
     var displayedURL = NSURL(string: "https://blank.org/")!
     let urlStandard = NSURL(string: "https://blank.org/")!
-
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,7 +50,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         task.resume()
         return true
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -92,31 +92,30 @@ class ViewController: UIViewController, UITextFieldDelegate {
             //var newURL: NSURL
             
             //if (searchForURL.containsString("url=")) {
-                //aha. Found the URL
-              //  let startofURL = searchableContent
-                
-               // newURL = NSURL(string: searchableContent.substringWithRange(urlRange))!
-                //displayedURL = newURL
+            //aha. Found the URL
+            //  let startofURL = searchableContent
+            
+            // newURL = NSURL(string: searchableContent.substringWithRange(urlRange))!
+            //displayedURL = newURL
             //} else {
-               // NSLog("could not find url...")
+            // NSLog("could not find url...")
             //}
             displayedURL = NSURL(string: "https://memecrunch.com/meme/AFUA3/found-it/image.jpg?w=1024&c=1")!
             
             
         } else {
             print("could not find term")
-            displayedURL = urlStandard;
+            displayedURL = NSURL(string: "https://memecrunch.com/meme/AFUHX/i-checked-the-whole-backyard/image.jpg?w=425&c=1")!
             
         }
         
         
         if (updateDisplay() ) {
             //display updated correctly
-            NSLog("Display Correct")
+            //NSLog("Display Correct")
         }
         return true
     }
-
-
+    
+    
 }
-
